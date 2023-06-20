@@ -17,4 +17,4 @@ The following are some of the projects included in this repository:
 While this is a personal learning journey, suggestions and tips are always welcome. Please feel free to submit a pull request or create an issue if you find any mistakes or areas for improvement.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://mit-license.org/) file for details.
