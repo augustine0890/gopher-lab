@@ -1,4 +1,4 @@
-package main
+package stack
 
 import "fmt"
 
@@ -17,6 +17,7 @@ func (s *StackInt) Length() int {
 }
 
 // The print function will print the elements of the array.
+// O(n)
 func (s *StackInt) Print() {
 	fmt.Println(s.items)
 }
@@ -50,4 +51,22 @@ func (s *StackInt) Top() int {
 	}
 	item := s.items[len(s.items)-1]
 	return item
+}
+
+func Run() {
+	stack := new(StackInt)
+	// Push element to the stack
+	stack.Push(6)
+	stack.Push(3)
+	stack.Push(2)
+	stack.Push(5)
+	//Retrieve top element from the stack
+	fmt.Println("Top() of the stack is: ", stack.Top())
+	//Pop elements from the stack
+	fmt.Print("Stack consist of following elements: ")
+	stack.Print()
+	for !stack.IsEmpty() {
+		fmt.Print(stack.Pop(), " ")
+	}
+	fmt.Println()
 }
