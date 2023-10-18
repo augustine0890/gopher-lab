@@ -19,4 +19,12 @@ func fizzBuzz(n int) {
 
 func main() {
 	fizzBuzz(20)
+	var intSlice = []int{45, 12, 78, 36, 92, 5, 0}
+	maxNum := intSlice[0]
+	for _, num := range intSlice {
+		if num > maxNum {
+			maxNum = num
+		}
+	}
+	fmt.Printf("Maximal number: %v\n", maxNum)
 }
