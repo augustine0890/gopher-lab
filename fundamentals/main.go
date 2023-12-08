@@ -15,11 +15,14 @@ func main() {
 	*p++
 	fmt.Println(*p)
 
-	ages := map[string]int {
+	ages := map[string]int{
 		"Peter": 42,
 	}
 	incrementPeterAge(ages)
 	fmt.Println(ages)
+
+	myMap := make(map[string]string)
+	fmt.Println(myMap)
 }
 
 func incrementPeterAge(m map[string]int) {

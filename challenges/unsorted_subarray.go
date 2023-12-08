@@ -22,6 +22,7 @@ func findUnsortedSubarray(nums []int) int {
 			right = i + 1
 		}
 
+		// check current element fits into the sorted portion num[:left]
 		for left > 0 && nums[left-1] > nums[i] {
 			left--
 		}
